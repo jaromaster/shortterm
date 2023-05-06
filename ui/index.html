@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shortterm TODOs</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="code.js"></script>
+    </head>
+
+    <body>
+        <div id="headline">
+            <h1>TODOs</h1>
+        </div>
+        
+        <div id="matrix">
+            <table>
+                <tr>
+                    <td style="background-color: rgba(255, 174, 0, 0.5);" onclick="handleClick(1)">
+                      <p class="todo" id="todo1"></p>
+                    </td>
+                    <td style="background-color: rgba(255, 0, 0, 0.5);" onclick="handleClick(2)">
+                      <p class="todo" id="todo2"></p>
+                    </td>
+                    <td style="background-color: rgba(255, 0, 0, 0.8);" onclick="handleClick(3)">
+                      <p class="todo" id="todo3"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgba(0, 255, 0, 0.5);" onclick="handleClick(4)">
+                      <p class="todo" id="todo4"></p>
+                    </td>
+                    <td style="background-color: rgba(255, 174, 0, 0.5);" onclick="handleClick(5)">
+                      <p class="todo" id="todo5"></p>
+                    </td>
+                    <td style="background-color: rgba(255, 0, 0, 0.5);" onclick="handleClick(6)">
+                      <p class="todo" id="todo6"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: rgba(0, 255, 0, 0.8);" onclick="handleClick(7)">
+                      <p class="todo" id="todo7"></p>
+                    </td>
+                    <td style="background-color: rgba(0, 255, 0, 0.5);" onclick="handleClick(8)">
+                      <p class="todo" id="todo8"></p>
+                    </td>
+                    <td style="background-color: rgba(255, 174, 0, 0.5);" onclick="handleClick(9)">
+                      <p class="todo" id="todo9"></p>
+                    </td>
+                  </tr>
+            </table>
+        </div>
+
+        <dialog id="editDialog">
+            <form method="dialog">
+                <label for="edittext">Edit</label><br>
+                <textarea id="edittext" spellcheck="true" maxlength="50"></textarea><br>
+                <button onclick="handleSubmit()">OK</button>
+            </form>
+        </dialog>
+    </body>
+</html>

@@ -3,4 +3,4 @@
 ### matrix for working with todos
 
 ## Preview
-[Preview](./ui/index.html)
+[Preview](https://jaromaster.github.io/shortterm/ui/index.html)
